@@ -1,0 +1,258 @@
+/* Build the website of Superhero Moives Online - homepage */
+
+/* General settings */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/index_body_bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+*{ box-sizing: border-box;}
+
+/*header start here*/
+header{
+    display: grid;
+    grid-template-columns: 1200px;
+    justify-content: center;
+    padding-top: 15px;
+}
+nav{
+    display: grid;
+    grid-template-columns: 150px 800px 150px;
+    grid-template-rows: 50px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    position: relative;
+}
+.nav-wrapper{
+    background-color: #FFFFFF;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.nav-wrapper-center{
+    grid-template-columns: repeat(5, 160px);
+}
+.nav-item{
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-wrapper :hover {
+    padding-bottom: 5px;
+	border-bottom: 5px solid #015e7a;
+    background-color: #015e7a;
+}
+.nav-item-select{
+    border: none;
+    font-size: 16px;
+    padding: 0px 15px;
+    background-color: transparent;
+}
+.nav-item > a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-wrapper-center > .nav-item{
+    border-right: 1px solid #000000;
+}
+.nav-logo{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    z-index: 9;
+    width: 90px;
+}
+
+.header-title{
+    line-height: 100px;
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #000000;
+}
+.header-desc{
+    width: 70%;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px 3px #000000;
+}
+.header-desc > p{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+.header-button{
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    background-color: #7f8eb7;
+    color: #FFFFFF;
+    border: none;
+    font-size: 22px;
+    border-radius: 8px;
+    margin-bottom: 60px;
+}
+.header-button:hover { background-color: #015e7a;}
+
+/*banner section start here*/
+.banner-section{
+    width: 1200px;
+    margin: 0px auto 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: space-between;
+}
+.banner-img{
+    width: 100%;
+}
+/* vote section start here*/
+.vote-section-title{
+    width: 100%;
+    line-height: 100px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #666666;
+    text-align: center;
+}
+.vote-section{
+    background-color: #7f8eb7;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 700px 250px 250px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+.vote-title{
+    font-size: 60px;
+    line-height: 120px;
+}
+.vote-conte{
+    font-size: 20px;
+    line-height: 40px;
+}
+.vote-button-container{
+    text-align: right;
+    padding-top: 30px;
+}
+.vote-button{
+    background-color: #FFFFFF;
+    color: #000000;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+}
+.vote-button:hover {
+    background-color: #015e7a;
+}
+
+.vote-image-1{
+    display: block;
+    margin: 0px auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.vote-image-2{
+    display: block;
+    margin: 0px auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.vote-input{
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+    cursor: pointer;
+}
+
+/*contact section shart here*/
+.contact-section{
+    padding: 100px 0px;
+    display: grid;
+    grid-template-columns: 700px 500px;
+    justify-content: center;
+    align-items: center;
+}
+.contact-content-container{
+    margin-right: 60px;
+}
+.contact-title{
+    font-size: 40px;
+    color: #656565;
+    line-height: 120px;
+}
+.contact-content{
+    font-size: 16px;
+    line-height: 30px;
+    color: #656565;
+}
+.contact-form-container{
+    background-color: #7f8eb7;
+    padding: 50px 40px;
+}
+.contact-input{
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.contact-textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.contact-button{
+    background-color: #FFFFFF;
+    color: #000000;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+/*footer start here*/
+footer{
+    background-color: #7f8eb7;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1200px;
+    justify-content: center;
+}
+footer > nav{
+    margin-bottom: 50px;
+}
+.footer-icon-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 650px 250px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.footer-icon{
+    width: 60px;
+}
+.footer-corporation{
+    text-align: center;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.footer-map{
+    width: 250px;
+    height: 150px;
+}
+/*--end*/
